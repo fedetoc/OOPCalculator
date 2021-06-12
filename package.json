@@ -1,0 +1,38 @@
+{
+	"name": "tp2",
+	"version": "1.0.0",
+	"description": "calculadora",
+	"main": "script.js",
+	"scripts": {
+		"watch-live": "live-server",
+		"watch-sass": "sass --watch main.scss style.css",
+		"lys": "concurrently \"npm run watch-live\" \"npm run watch-sass\"",
+		"start-parcel": "parcel index.html",
+		"build": "parcel build index.html"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"concurrently": "^6.1.0"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.2.5",
+		"live-server": "^1.2.1",
+		"parcel-bundler": "^1.12.5",
+		"sass": "^1.32.12"
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"quoteProps": "preserve",
+		"useTabs": true,
+		"jsxBracketSameLine": true,
+		"htmlWhitespaceSensitivity": "strict"
+	},
+	"autoprefixer.options": {
+		"browsers": [
+			"last 10 versions",
+			"ie >= 9",
+			"> 1%"
+		]
+	}
+}

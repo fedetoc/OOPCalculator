@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<main class="main">
+			<form class="calcForm">
+				<div class="calcForm__title title">
+					<h1 class="title__main">
+						Realice sus
+						<span class="title__highlight title__highlight_1">cuentas</span>
+						con
+						<span class="title__highlight title__highlight_2">nosotros</span>
+					</h1>
+				</div>
+				<div class="calcForm__input_cont">
+					<input
+						type="number"
+						placeholder="Ingrese un numero"
+						id="num1"
+						class="calcForm__input"
+					/>
+					<span class="calcForm__input_span">Ingrese un numero</span>
+					<span class="calcForm__input_space calcForm__input_space_1"></span>
+				</div>
+				<div class="calcForm__input_cont">
+					<input
+						type="number"
+						placeholder="Ingrese otro numero"
+						id="num2"
+						class="calcForm__input"
+					/>
+					<span class="calcForm__input_span">Ingrese otro numero</span>
+					<span class="calcForm__input_space calcForm__input_space_2"></span>
+				</div>
+				<div class="calcForm__buttons">
+					<button
+						class="btn calcForm__buttons_btn form__btn form__btn_green"
+						type="submit"
+						>+</button
+					>
+					<button
+						class="btn calcForm__buttons_btn form__btn form__btn_red"
+						type="submit"
+						>-</button
+					>
+					<button
+						class="btn calcForm__buttons_btn form__btn form__btn_green"
+						type="submit"
+						>*</button
+					>
+					<button
+						class="btn calcForm__buttons_btn form__btn form__btn_red"
+						type="submit"
+						>/</button
+					>
+				</div>
+			</form>
+			<div class="calculator">
+				<input type="text" class="calculator__result" readonly />
+				<button class="btn btnCalculator">1</button>
+				<button class="btn btnCalculator">2</button>
+				<button class="btn btnCalculator">3</button>
+				<button class="btn btnCalculator">4</button>
+				<button class="btn btnCalculator">5</button>
+				<button class="btn btnCalculator">6</button>
+				<button class="btn btnCalculator">7</button>
+				<button class="btn btnCalculator">8</button>
+				<button class="btn btnCalculator">9</button>
+				<button class="btn btnCalculator">+</button>
+				<button class="btn btnCalculator">0</button>
+				<button class="btn btnCalculator">-</button>
+				<button class="btn btnCalculator">*</button>
+				<button class="btn btnCalculator">/</button>
+				<button class="btn btnCalculator">=</button>
+			</div>
+		</main>
+	</body>
+</html>
