@@ -1,0 +1,32 @@
+.form__btn {
+	font-family: inherit;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	padding: 0.8rem 3rem;
+	font-size: 1.7rem;
+	border-radius: 8px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	box-shadow: 1rem 0.8rem 1.2rem var(--btn-shadow-color);
+	text-align: right;
+	transition: all 0.5s;
+
+	&_green {
+		background-color: var(--green-btn-color);
+	}
+
+	&_red {
+		background-color: var(--red-btn-color);
+	}
+
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		transform: translateY(-0.2rem);
+		box-shadow: 1.8rem 1.3rem 2.4rem var(--btn-shadow-color);
+	}
+}

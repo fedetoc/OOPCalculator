@@ -1,0 +1,82 @@
+@mixin typeStyle {
+	font-family: "Nunito", sans-serif;
+	font-weight: 400;
+}
+
+.calcForm__input {
+	@include typeStyle;
+	font-size: 1.8rem;
+	padding: 0.7rem 2rem;
+	color: rgb(56, 56, 56);
+	border-radius: 2rem;
+	appearance: textfield;
+	border: 2px solid grey;
+	background-color: var(--color-primary);
+	transition: all 0.2s;
+	z-index: 500;
+
+	&:focus {
+		outline: none;
+		box-shadow: -0.05rem 0rem 0.45rem 0.1rem black;
+	}
+
+	&:focus + &_span {
+		visibility: visible;
+		opacity: 1;
+		transform: scale(1) translate(0, 0);
+	}
+
+	&:focus ~ &_space {
+		opacity: 1;
+	}
+
+	&::placeholder {
+		color: rgb(122, 122, 122);
+	}
+
+	&:focus::placeholder {
+		opacity: 0;
+	}
+
+	&_span {
+		@include typeStyle;
+		position: absolute;
+		font-size: 1.2rem;
+		top: -10%;
+		left: 7.4%;
+		opacity: 0;
+		visibility: hidden;
+		padding: 0rem 1rem;
+		z-index: 1;
+		line-height: 0.56;
+		transform: scale(1.5) translate(1.2rem, 1.5rem);
+		transition: transform 0.4s 0.1s ease-out, opacity 0.1s ease-out;
+		color: rgb(129, 129, 129);
+	}
+
+	&_space {
+		background-color: var(--color-primary);
+		position: absolute;
+		top: -0.5rem;
+		left: 8%;
+		height: 1rem;
+		opacity: 0;
+		z-index: 0;
+		display: block;
+		transition: opacity 0.3s ease-out;
+		width: 11.7rem;
+
+		&_1 {
+			width: 11.7rem;
+		}
+
+		&_2 {
+			width: 12.4rem;
+		}
+	}
+
+	&_cont {
+		display: inline-block;
+		position: relative;
+	}
+}

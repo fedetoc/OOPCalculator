@@ -1,0 +1,44 @@
+:root {
+	--color-primary: #f7f7f7;
+	--color-calculator: rgb(234, 234, 234);
+	--color-main-title: #565656;
+	--green-btn-color: #45b145;
+	--red-btn-color: #af2319;
+	--btn-shadow-color: rgba(122, 122, 122, 0.7);
+	--highlight-gradient: linear-gradient(
+		101deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(38, 255, 88, 1) 0%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	--hover-shadow-calculator: -0.2rem 0.2rem 0.32rem rgba(100, 100, 100, 0.8),
+		0.2rem -0.2rem 0.32rem rgba(100, 100, 100, 0.8),
+		0.2rem 0.3rem 0.32rem rgba(100, 100, 100, 0.8),
+		-0.25rem -0.1rem 0.32rem rgba(100, 100, 100, 0.8);
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: minmax(1rem, 0.1fr) repeat(2, 1fr);
+	padding: 5rem 0rem;
+	background-color: var(--color-primary);
+}

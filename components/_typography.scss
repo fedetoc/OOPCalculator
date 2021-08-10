@@ -1,0 +1,31 @@
+.title {
+	grid-column: 1 / 2;
+	position: relative;
+
+	&__main {
+		text-align: center;
+		font-family: "Nunito", sans-serif;
+		font-size: 6rem;
+		font-weight: 800;
+		color: var(--color-main-title);
+		display: inline-block;
+		transform: skewX(-4deg);
+	}
+
+	&__highlight {
+		position: relative;
+
+		&::after {
+			content: "";
+			display: block;
+			background-image: var(--highlight-gradient);
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			transform: skewX(-7deg);
+			z-index: -1;
+		}
+	}
+}
