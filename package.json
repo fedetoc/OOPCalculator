@@ -5,7 +5,7 @@
 	"main": "script.js",
 	"scripts": {
 		"watch-live": "live-server",
-		"watch-sass": "sass --watch main.scss main/style.css",
+		"watch-sass": "sass --watch main.scss distr/style.css",
 		"lys": "concurrently \"npm run watch-live\" \"npm run watch-sass\"",
 		"start-parcel": "parcel index.html",
 		"build": "parcel build index.html"
